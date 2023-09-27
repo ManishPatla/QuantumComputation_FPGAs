@@ -34,7 +34,7 @@ Quantum circuits serve as a convenient framework for describing quantum algorith
 
 In summary, our project explores the realm of quantum computing by leveraging FPGA technology to emulate quantum circuits efficiently. This innovative approach holds the potential to expedite quantum algorithm development, bridge the gap between quantum theory and practical experimentation, and unlock the full power of quantum parallelism.
 
-## Objective/Background <a name="objectivebackground"></a>
+## Objective <a name="objective"></a>
 
 **Motivation for Emulation of Quantum Circuits**
 
@@ -52,7 +52,7 @@ Quantum circuit simulation involves numerically representing quantum information
 In contrast, quantum circuit emulation also manipulates mathematical representations of quantum information. The primary goal is to replicate quantum algorithm behaviour as if executed on an actual quantum computer, including quantum noise at the gate level. While classical emulation faces resource consumption challenges similar to simulation, it introduces additional complexities like parallel computation and the recreation of extrinsic factors such as quantum noise. Some simulators use programming languages to describe quantum algorithms, while others rely on gate and quantum bit descriptions. However, the description language-based simulators often provide superior performance compared to those relying solely on gate interconnections.
 
 
-## Literature Review/Research Papers <a name="literature-reviewresearch-papers"></a>
+## Research Papers <a name="literature-reviewresearch-papers"></a>
 
 1. [FPGA Emulation of Quantum Circuits: Ahmed Usman Khalid](link-to-paper)
 2. [Evolving Quantum Circuits and an FPGA-based Quantum Computing Emulator: Negovetic G., Perkowski M., Lukac M., Buller A.](link-to-paper)
@@ -60,7 +60,7 @@ In contrast, quantum circuit emulation also manipulates mathematical representat
 4. [FPGA-Based Quantum Circuit Emulation: A Case Study on Quantum Fourier Transform](link-to-paper)
 5. [New FPGA design solution using quantum computation concepts, 2021 IEEE 27th International Symposium for Design and Technology in Electronic Packaging.](link-to-paper)
 
-## Methodology/Design Flow <a name="methodologydesign-flow"></a>
+## Design Flow <a name="methodologydesign-flow"></a>
 
 ### Simulation vs. Emulation Differentiation
 
