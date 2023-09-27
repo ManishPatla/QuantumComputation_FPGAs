@@ -4,15 +4,35 @@
 
 1. [Abstract](#abstract)
 2. [Introduction](#introduction)
-3. [Objective/Background](#objectivebackground)
-4. [Literature Review/Research Papers](#literature-reviewresearch-papers)
-5. [Methodology/Design Flow](#methodologydesign-flow)
+3. [Objective](#objectivebackground)
+4. [Research Papers](#literature-reviewresearch-papers)
+5. [Design Flow](#methodologydesign-flow)
    - [Simulation vs. Emulation Differentiation](#simulation-vs-emulation-differentiation)
    - [Quantum Circuit Fundamentals](#quantum-circuit-fundamentals)
    - [Hardware Implementation](#hardware-implementation)
    - [Emulating Quantum Circuit Behaviour](#emulating-quantum-circuit-behaviour)
    - [HDL-Based Simulation of Quantum Circuits](#hdl-based-simulation-of-quantum-circuits)
    - [Emulation Overview](#emulation-overview)
+
+## Background
+
+- As quantum computing matures, both the number of quantum developers and open-source tools steeply rise.
+- Technological restrictions slow down the expansion of shared learning and development in quantum computing.
+- Quantum computers are prohibitively expensive to build and maintain, limiting access to only a few major corporations like Google and IBM.
+- Quantum simulators have emerged as an alternative for developers to model quantum computer behavior.
+- However, simulators face a significant limitation in terms of computation speed compared to actual quantum computers.
+- Quantum computers leverage parallelism due to the superposition of qubits, while simulators on classical computers lack this parallelism.
+- Simulating larger quantum computers with more qubits on classical computers results in exponential slowdown.
+
+## Project Overview
+
+- The project aims to prototype hardware acceleration of quantum computing simulations using FPGA.
+- Traditional software-based quantum simulation on a CPU experiences exponential slowdown with larger quantum circuits.
+- Offloading heavy computational tasks to specialized hardware like FPGA reduces latency and speeds up simulations.
+- Hardware acceleration becomes especially advantageous as quantum circuits grow in size (higher-qubit computations).
+  
+This approach leverages the parallelism and matrix manipulation capabilities of FPGAs to enhance the efficiency of quantum circuit simulation.
+
 
 ## Abstract <a name="abstract"></a>
 
