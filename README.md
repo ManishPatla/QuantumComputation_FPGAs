@@ -125,11 +125,8 @@ Incorporating HDL-based simulation into our project enables us to explore a robu
 
 **Emulator Overview**
 
-The design process of our emulator is illustrated in Figure 3.1, and it encompasses the construction of quantum circuits using quantum gate descriptions embedded within the emulator. The correctness of these circuits can be verified through either software simulation or FPGA emulation. This technique involves modeling quantum circuits using HDL and then synthesizing them in hardware, which is essential to achieve the performance required to make the entire process practical.
+The design process of our emulator is illustrated in Figure , and it encompasses the construction of quantum circuits using quantum gate descriptions embedded within the emulator. The correctness of these circuits can be verified through either software simulation or FPGA emulation. This technique involves modeling quantum circuits using HDL and then synthesizing them in hardware, which is essential to achieve the performance required to make the entire process practical.
 
-**Key Components of the Emulator:**
-
-1. **C++ Command-Line Interface:** This interface serves as a fast and efficient tool for generating VHDL descriptions of the gates needed in quantum circuits. It simplifies the process of calling C++ functions responsible for generating gate descriptions. These descriptions cover a range of gates, including the X-gate, Z-gate, Hadamard Gate, Rotation gates, as well as common multiple input gates like the controlled versions of single input gates and the swap gate. To generate the appropriate VHDL description of a gate, the user simply provides the gate name, system size, and the number of inputs. The generated gates utilize the expanded state space notation for both inputs and outputs, ensuring comprehensive gate functionality.
 
 ![image](https://github.com/ManishPatla/QuantumComputation_FPGAs/assets/109287423/52cceb39-07ab-4cf6-9cb2-dded5a760c17)
 
@@ -137,5 +134,11 @@ The design process of our emulator is illustrated in Figure 3.1, and it encompas
 *Figure 3.1: Emulation Overview*
 
 This comprehensive approach to emulation allows for the efficient and precise replication of quantum circuit behavior on FPGA hardware, facilitating the development and testing of quantum algorithms in a real-world, parallel computing environment.
+
+
+## Implementation:
+
+
+
 
 
