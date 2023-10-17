@@ -8,7 +8,7 @@
 3. [Objective](#objectivebackground)
 4. [Research Papers](#literature-reviewresearch-papers)
 5. [Design Flow](#methodologydesign-flow)
-   - [Simulation vs. Emulation Differentiation](#simulation-vs-emulation-differentiation)
+   - [Simulation vs Emulation Differentiation](#simulation-vs-emulation-differentiation)
    - [Quantum Circuit Fundamentals](#quantum-circuit-fundamentals)
    - [Hardware Implementation](#hardware-implementation)
    - [Emulating Quantum Circuit Behaviour](#emulating-quantum-circuit-behaviour)
