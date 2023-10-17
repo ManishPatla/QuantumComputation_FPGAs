@@ -1,6 +1,6 @@
 
 # FPGA-based Emulation of Quantum Circuits  
-### Quantum Computing
+### QUANTUM COMPUTING
 
 ![image](https://github.com/ManishPatla/QuantumComputation_FPGAs/assets/109287423/810cdb68-3fee-41a4-8321-66625d9649d5)
 
