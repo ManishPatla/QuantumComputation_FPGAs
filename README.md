@@ -1,12 +1,16 @@
-# Quantum Computation
-# FPGA-based Emulation of Quantum Circuits
+
+# FPGA-based Emulation of Quantum Circuits  
+### Quantum Computing
+
+![image](https://github.com/ManishPatla/QuantumComputation_FPGAs/assets/109287423/810cdb68-3fee-41a4-8321-66625d9649d5)
+
 
 ## Table of Contents
 
 1. [Abstract](#abstract)
 2. [Introduction](#introduction)
-3. [Objective](#objectivebackground)
-4. [Research Papers](#literature-reviewresearch-papers)
+3. [Objective](#objective)
+4. [Literature Review/Research Papers](#literature-reviewresearch-papers)
 5. [Design Flow](#methodologydesign-flow)
    - [Simulation vs Emulation Differentiation](#simulation-vs-emulation-differentiation)
    - [Quantum Circuit Fundamentals](#quantum-circuit-fundamentals)
@@ -73,7 +77,7 @@ Quantum circuit simulation involves numerically representing quantum information
 In contrast, quantum circuit emulation also manipulates mathematical representations of quantum information. The primary goal is to replicate quantum algorithm behaviour as if executed on an actual quantum computer, including quantum noise at the gate level. While classical emulation faces resource consumption challenges similar to simulation, it introduces additional complexities like parallel computation and the recreation of extrinsic factors such as quantum noise. Some simulators use programming languages to describe quantum algorithms, while others rely on gate and quantum bit descriptions. However, the description language-based simulators often provide superior performance compared to those relying solely on gate interconnections.
 
 
-## Research Papers <a name="literature-reviewresearch-papers"></a>
+## Literature Survey/Research Papers <a name="literature-reviewresearch-papers"></a>
 
 1. [FPGA Emulation of Quantum Circuits: Ahmed Usman Khalid](link-to-paper)
 2. [Evolving Quantum Circuits and an FPGA-based Quantum Computing Emulator: Negovetic G., Perkowski M., Lukac M., Buller A.](link-to-paper)
@@ -105,11 +109,11 @@ In our project, we explore HDL-based simulation of quantum circuits, which invol
 
 **Key Characteristics:**
 
-- **Direct Incorporation:** HDL simulation of quantum circuits aligns qubits and quantum gates with classical gates and bits, respectively. Qubits are described using two complex numbers in VHDL, employing the "real" keyword. Gates are constructed with qubits as inputs and outputs, and the gate transformations are described using behavioral VHDL. The quantum circuit is then constructed by combining these gates using structural VHDL.
+- **Direct Incorporation:** HDL simulation of quantum circuits aligns qubits and quantum gates with classical gates and bits, respectively. Qubits are described using two complex numbers in HDL, employing the "real" keyword. Gates are constructed with qubits as inputs and outputs, and the gate transformations are described using behavioral VHDL. The quantum circuit is then constructed by combining these gates using structural VHDL.
 
 - **Challenges with Entanglement:** An essential challenge in HDL simulation is dealing with entanglement explicitly. Unlike previous simulators that expanded the quantum circuit to full basis states and applied tensor products, HDL aims for simplicity in gate descriptions. Therefore, explicit detection and simulation of entanglement are required. Detailed entanglement extraction algorithms have been derived to detect when entanglement occurs or disappears. These algorithms are simulated using functional VHDL and exhibit exponential complexity, resulting in resource usage similar to expanded state space simulators.
 
-- **CAD Simulation Tools:** Utilizing VHDL for simulating quantum circuits allows us to harness CAD simulation tools typically used in classical circuit development. This involves either employing structural VHDL or using graphical netlist creation tools, streamlining the processes of circuit creation and result simulation.
+- **CAD Simulation Tools:** Utilizing HDL for simulating quantum circuits allows us to harness CAD simulation tools typically used in classical circuit development. This involves either employing structural VHDL or using graphical netlist creation tools, streamlining the processes of circuit creation and result simulation.
 
 **Performance Considerations:**
 
@@ -121,7 +125,7 @@ Incorporating HDL-based simulation into our project enables us to explore a robu
 
 **Emulator Overview**
 
-The design process of our emulator is illustrated in Figure 3.1, and it encompasses the construction of quantum circuits using quantum gate descriptions embedded within the emulator. The correctness of these circuits can be verified through either software simulation or FPGA emulation. This technique involves modeling quantum circuits using VHDL and then synthesizing them in hardware, which is essential to achieve the performance required to make the entire process practical.
+The design process of our emulator is illustrated in Figure 3.1, and it encompasses the construction of quantum circuits using quantum gate descriptions embedded within the emulator. The correctness of these circuits can be verified through either software simulation or FPGA emulation. This technique involves modeling quantum circuits using HDL and then synthesizing them in hardware, which is essential to achieve the performance required to make the entire process practical.
 
 **Key Components of the Emulator:**
 
