@@ -136,7 +136,7 @@ The design process of our emulator is illustrated in Figure , and it encompasses
 This comprehensive approach to emulation allows for the efficient and precise replication of quantum circuit behavior on FPGA hardware, facilitating the development and testing of quantum algorithms in a real-world, parallel computing environment.
 
 
-## Implementation:
+## Implementation/Work:
 
 
 
