@@ -1,4 +1,5 @@
-# FPGA-based Emulation of Quantum Computing
+# Quantum Computation
+# FPGA-based Emulation of Quantum Circuits
 
 ## Table of Contents
 
