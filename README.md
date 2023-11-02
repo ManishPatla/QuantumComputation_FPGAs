@@ -11,7 +11,7 @@
 2. [Introduction](#introduction)
 3. [Objective](#objective)
 4. [Literature Review/Research Papers](#literature-reviewresearch-papers)
-5. [Design Flow](#methodologydesign-flow)
+5. [Methodology/Design Flow](#methodology/design-flow)
    - [Simulation vs Emulation Differentiation](#simulation-vs-emulation-differentiation)
    - [Quantum Circuit Fundamentals](#quantum-circuit-fundamentals)
    - [Hardware Implementation](#hardware-implementation)
@@ -90,7 +90,7 @@ In contrast, quantum circuit emulation also manipulates mathematical representat
 4. [FPGA-Based Quantum Circuit Emulation: A Case Study on Quantum Fourier Transform](link-to-paper)
 5. [New FPGA design solution using quantum computation concepts, 2021 IEEE 27th International Symposium for Design and Technology in Electronic Packaging.](link-to-paper)
 
-## Design Flow <a name="methodologydesign-flow"></a>
+## Methodology/Design Flow
 
 ### Simulation vs. Emulation Differentiation
 
