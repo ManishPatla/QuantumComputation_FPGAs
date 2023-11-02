@@ -1,4 +1,3 @@
-
 # FPGA-based Emulation of Quantum Circuits  
 ### QUANTUM COMPUTING
 
@@ -238,8 +237,92 @@ This phase involves creating a configuration file and programming the FPGA eithe
 <img width="608" alt="image" src="https://github.com/ManishPatla/QuantumComputation_FPGAs/assets/109287423/708134b2-4e5a-4c7f-8eb7-f17507923a3a">
 
 
-#### *FPGA Design Conclusion*:
+#### FPGA Design Conclusion:
 Running a design through a simple FPGA flow sometimes won’t be sufficient for complex designs. Therefore, for stringent design requirements like dense area or aggressive timing requirements or for other challenges like a large FPGA, we need to go through an advanced FPGA flow.
+
+
+### Implementation Procedure
+
+###### Initially Preliminary :
+Get Familiar with Quantum Computing and its concepts like Superposition,Entanglement & Quantum Algorithms like Grover,Shors,Teleportation and No Cloning Theroem etc.
+Gain Hands on Expereince with the Qiskit Tool ,Building  Quantum gates and Circuits by coding them in Qiskit 
+Simulating the Quantum Netlist in Qiskit to verify its Functionality.
+
+
+### Step1 : Build an Quantum Circuit using Qiskit 
+
+*Implementing QUANTUM CIRCUIT based on QUANTUM TELEPORTATION ALGORITHM , by coding it in Qiskit and generate equivalent Quantum Netlist* 
+
+### Algorithm Implemented :
+
+Explanation of Algorithm!!! 
+
+Qiskit Implementation of the Circuit:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Circuit:
+
+
+
+
+
+
+
+
+Functionality Verification:
+
+
+
+
+
+Adv and Disadvantage of this :
+
+
+
+
+Specifying [Proof] the reason why we are emulating it using FPGA Hardware 
+
+
+
+
+
+
+### Step2 : Either HDL /MATRIX Representation
+
+
+
+
+
+
+
+### Step3 : Simulation using XILINX VIVADO DESIGN SUITE 
+
+
+
+
+
+
+### Synthesis :
+
+
+
+
+
+
+### Dumping   : 
+
 
 
 
