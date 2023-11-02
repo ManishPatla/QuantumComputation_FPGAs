@@ -18,6 +18,11 @@
    - [Emulating Quantum Circuit Behaviour](#emulating-quantum-circuit-behaviour)
    - [HDL-Based Simulation of Quantum Circuits](#hdl-based-simulation-of-quantum-circuits)
    - [Emulation Overview](#emulation-overview)
+6. [FPGA Design](#fpga-design)
+7. [Implementation Procedure](#implementationprocedure)
+9. [Results](#results)
+10. [Conclusion](#objective)
+11. [Overall Summary](#Summary)
 
 ## Background
 
@@ -137,6 +142,7 @@ This comprehensive approach to emulation allows for the efficient and precise re
 
 
 ## Implementation/Work:
+
 
 
 
