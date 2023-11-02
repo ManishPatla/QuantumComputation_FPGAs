@@ -18,7 +18,7 @@
    - [Emulating Quantum Circuit Behaviour](#emulating-quantum-circuit-behaviour)
    - [HDL-Based Simulation of Quantum Circuits](#hdl-based-simulation-of-quantum-circuits)
    - [Emulation Overview](#emulation-overview)
-6. [FPGA Design](#fpga-design)
+6. [FPGA Architecture  Design Flow](#fpga-architecture-design-flow)
 7. [Implementation Procedure](#implementationprocedure)
 9. [Results](#results)
 10. [Conclusion](#objective)
@@ -140,8 +140,107 @@ The design process of our emulator is illustrated in Figure , and it encompasses
 
 This comprehensive approach to emulation allows for the efficient and precise replication of quantum circuit behavior on FPGA hardware, facilitating the development and testing of quantum algorithms in a real-world, parallel computing environment.
 
+### FPGA Architecture  Design Flow
 
-## Implementation/Work:
+#### Components of an FPGA
+
+FPGAs are composed of three primary types of modules:
+
+#### 1. Configurable Logic Block (CLB)
+
+The Configurable Logic Block (CLB) serves as the foundational building block within an FPGA. Each CLB comprises multiple slices, which in turn consist of various elements:
+
+- **Function Generators (LUTs):** Look-Up Tables are used to implement logic functions.
+- **Registers:** Storage elements for holding data.
+- **Multiplexers:** Used for data routing and selection.
+- **Carry Logic:** Essential for arithmetic and logic operations.
+
+#### 2. Switch Matrix or Interconnection Wires
+
+Interconnection within an FPGA is facilitated by the Switch Matrix. This component handles the routing of signals between CLBs and from CLBs to Input/Output Blocks (IOBs).
+
+#### 3. IO Blocks (IOB)
+
+IO Blocks serve as the basic input/output function blocks of the FPGA. These blocks enable communication between the FPGA and external devices or systems.
+
+#### Understanding the Interaction
+
+The interaction among these components is crucial for the proper functioning of an FPGA. The CLBs provide the logic and computational capabilities, the Switch Matrix facilitates communication and connectivity, and the IOBs handle input and output operations.
+
+This architecture provides a highly customizable platform for implementing digital circuits based on specific requirements, allowing for flexible configurations and adaptations.
+
+
+
+![image](https://github.com/ManishPatla/QuantumComputation_FPGAs/assets/109287423/eaeeb16b-19b9-44c8-8361-07631a972854)
+
+
+#### Typical FPGA Design Flow
+
+<img width="542" alt="image" src="https://github.com/ManishPatla/QuantumComputation_FPGAs/assets/109287423/86cfbced-a6c8-415b-978b-6d4df10a3141">
+
+
+### FPGA Selection and Design Process
+
+This Step provides an overview of the process involved in selecting an FPGA and the subsequent design stages. It highlights key considerations from choosing an FPGA to its programming.
+
+#### 1. FPGA Selection
+
+FPGA selection is the initial step in the design phase. Vendors offer FPGAs tailored to specific end-user applications, such as automotive, defense, and space applications. Recent technologies, like 5G Wireless, Embedded Vision, and Industrial IoT, leverage FPGA capabilities, particularly with the inclusion of ARM processors and C-based compilers for FPGA platforms.
+
+#### Device Categories
+- **Xilinx Automotive (XA)**
+  - XA Zynq UltraScale+
+  - XA Zynq®-7000
+  - XA Artix®-7
+  - Kintex®
+
+#### 2. Choosing an FPGA
+
+When choosing an FPGA, several limitations need consideration:
+
+- Number of Available I/Os (Differential and Single Ended)
+- Internal Memories (RAMs)
+- DSP Slices (Complex Multipliers)
+- Connectivity Ports (Serial Interfaces, Memory Interfaces)
+
+Designers should aim to utilize 60% to 75% of logic resources like slices and LUTs to avoid issues related to routing congestion and timing closure. Considering pin-compatible devices with higher resources allows room for additional logic in evolving designs.
+
+#### 3. Estimation
+
+Estimating resource utilization aids in FPGA selection and system Bill of Materials (BoM).
+
+#### 3.1 Area Estimation
+- Predicts FPGA occupancy; choosing an FPGA with insufficient gate count poses risks to the project.
+- Microarchitecture analysis helps estimate the area of individual modules and built-in FPGA resources (e.g., memory, DSP slices, IOs).
+
+#### 3.2 Power Estimation
+- Power estimation tools like Xilinx Power Estimator (XPE) and Vivado Power Analysis help in budgeting power for design and thermal management.
+
+#### 4. Design Entry
+
+Design entry formats include RTL design (VHDL, Verilog, etc.), schematic entry, third-party IP cores, and simulation libraries.
+
+#### 5. Design Synthesis
+
+Design synthesis generates Gate Level Netlist for implementation.
+
+#### 6. Design Implementation
+
+#### Stages:
+1. **Translate:** Merges netlists, performs checks, and adds user constraints.
+2. **Mapping:** Allocates resources and processes constraints.
+3. **Placement and Routing:** Finalizes the physical design database and provides reports on delays.
+
+#### 7. Device Programming
+
+This phase involves creating a configuration file and programming the FPGA either directly from a host computer using a download cable or through flash/PROM.
+
+<img width="608" alt="image" src="https://github.com/ManishPatla/QuantumComputation_FPGAs/assets/109287423/708134b2-4e5a-4c7f-8eb7-f17507923a3a">
+
+
+#### *FPGA Design Conclusion*:
+Running a design through a simple FPGA flow sometimes won’t be sufficient for complex designs. Therefore, for stringent design requirements like dense area or aggressive timing requirements or for other challenges like a large FPGA, we need to go through an advanced FPGA flow.
+
 
 
 
