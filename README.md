@@ -243,10 +243,52 @@ Running a design through a simple FPGA flow sometimes won’t be sufficient for 
 
 ### Implementation Procedure
 
-###### Initially Preliminary :
+###### Initial Preliminary :
 Get Familiar with Quantum Computing and its concepts like Superposition,Entanglement & Quantum Algorithms like Grover,Shors,Teleportation and No Cloning Theroem etc.
-Gain Hands on Expereince with the Qiskit Tool ,Building  Quantum gates and Circuits by coding them in Qiskit 
-Simulating the Quantum Netlist in Qiskit to verify its Functionality.
+Gain Hands on Expereince with the Qiskit Tool,Build Quantum gates and Circuits by coding them in Qiskit.
+Simulate and Develop a  Quantum Netlist in Qiskit to verify its Functionality.
+
+
+#### *Quantum Full Adder in an FPGA Hardware Chip*
+
+The idea is to Program this style of Architecture in FPGA and Develop a Quantum Hardware in FPGA.
+
+In General 
+Classical Computation known for Determnstic output. 
+Quantum Computation gives us an Undetermnstic Output. 
+
+At this level, Quantum Hardware has several challenges like 
+*Signifucant Errors 
+*Creating Cost in millions 
+
+Hence we need an emulator or classical computer to accelerate Quantum software.
+
+2 Ways of Emulation :
+
+- Software : Classical Simulation
+- Hardware : FPGA emulation
+
+*FPGA Emulation is much better than Software simulation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Step1 : Build an Quantum Circuit using Qiskit 
