@@ -243,19 +243,22 @@ Running a design through a simple FPGA flow sometimes won’t be sufficient for 
 
 ### Implementation Procedure
 
-###### Initial Preliminary :
+###### Preliminary :
 Get Familiar with Quantum Computing and its concepts like Superposition,Entanglement & Quantum Algorithms like Grover,Shors,Teleportation and No Cloning Theroem etc.
 Gain Hands on Expereince with the Qiskit Tool,Build Quantum gates and Circuits by coding them in Qiskit.
 Simulate and Develop a  Quantum Netlist in Qiskit to verify its Functionality.
 
+### QISKIT 
+Qiskit is the library of python that is developed by IBM and is meant to code and create Quantum circuits and run these circuits on local simulators, IBM quantum simulators, or real IBM Quantum Computers. 
 
-#### *Quantum Full Adder in an FPGA Hardware Chip*
+
+#### Quantum Full Adder in an FPGA Hardware Chip
 
 The idea is to Program this style of Architecture in FPGA and Develop a Quantum Hardware in FPGA.
 
 In General 
-Classical Computation known for Determnstic output. 
-Quantum Computation gives us an Undetermnstic Output. 
+Classical Computation known for Determenstic output. 
+Quantum Computation gives us an Undetermenstic Output. 
 
 At this level, Quantum Hardware has several challenges like 
 *Signifucant Errors 
@@ -268,7 +271,54 @@ Hence we need an emulator or classical computer to accelerate Quantum software.
 - Software : Classical Simulation
 - Hardware : FPGA emulation
 
-*FPGA Emulation is much better than Software simulation.
+
+# Quantum Full Adder
+
+
+A Quantum Full Adder is a specialized quantum circuit designed for addition in the context of quantum computing. Unlike classical full adders that operate on classical bits, quantum full adders take advantage of the principles of quantum mechanics to perform addition in a quantum computing environment.
+
+## Key Features:
+
+### 1. Superposition:
+   Quantum full adders can process multiple inputs simultaneously, thanks to the principle of superposition. Qubits, the quantum counterparts of classical bits, can 
+   exist in multiple states at the same time.
+
+### 2. Entanglement:
+   Quantum bits (qubits) can be entangled, establishing correlations between them. This entanglement property enables quantum full adders to explore parallel 
+   computational paths.
+
+### 3. Probabilistic Nature:
+   Quantum computing is inherently probabilistic. Quantum full adders provide results that are probabilistic in nature, and multiple computations may be performed 
+   simultaneously with varying probabilities.
+
+### 4. Quantum Gates:
+   Quantum circuits, including full adders, use quantum gates such as controlled NOT (CNOT) gates. These gates enable the manipulation and interaction of qubits, 
+   contributing to the unique behavior of quantum circuits.
+
+## Quantum Full Adder Design:
+
+The design of a quantum full adder involves leveraging quantum gates and principles to perform addition. Quantum carry gates and CNOT gates are commonly used in the construction of quantum full adders, allowing for the parallel processing of quantum states.
+
+**Note:** The behavior and design of quantum circuits, including full adders, differ significantly from classical circuits due to the principles of quantum computing. Results obtained from quantum computations may be probabilistic, and the quantum full adder operates in a fundamentally different manner compared to its classical counterpart.
+
+### QISKIT IMPLEMENTATION OF QUANTUM CIRCUIT
+
+It has all the required gates that are required to create a full adder circuit. Following Quantum Gates are used to construct a Full Adder Circuit.
+- X Gate      : X gate is a single-qubit gate. It is generally known as a bit flip gate which flips the current state of a qubit.
+- CNOT Gate   : CNOT is a multi-qubit gate in which 1 qubit has control while the other one is the target qubit when the control qubit is 1 then it flips the state 
+                of he target qubit otherwise it remains unchanged.
+- Toffoli Gate: Toffoli gate is a multi-qubit gate that involves 3 qubits. The first two qubits are control and the third qubit is the target qubit. It behaves like 
+                a classical AND operation Quantum Full Adder Circuit
+
+<img width="499" alt="image" src="https://github.com/ManishPatla/QuantumComputation_FPGAs/assets/109287423/38d90df9-5236-4dd4-85e4-e0c047aba8df">
+
+
+
+
+
+
+
+
 
 
 
